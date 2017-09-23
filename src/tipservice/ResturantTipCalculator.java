@@ -4,7 +4,7 @@ package tipservice;
 1. Create one low-level worker object that produces a tip. 
 @author Ashlee
  */
-public class ResturantTipCalculator {
+public class ResturantTipCalculator implements TipCalculator{
 
     private double tipPercent;
     private double billAmt;

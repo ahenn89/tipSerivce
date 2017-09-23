@@ -3,7 +3,7 @@
 */
 package tipservice;
 
-public class BartenderTipCalculator {
+public class BartenderTipCalculator implements TipCalculator {
     private int drinkQty;
     private double tipPerDrink;
 
@@ -12,6 +12,7 @@ public class BartenderTipCalculator {
         this.tipPerDrink = tipPerDrink;
     }
     
+    @Override
     public double calcTip() {
         return drinkQty * tipPerDrink;
     }
