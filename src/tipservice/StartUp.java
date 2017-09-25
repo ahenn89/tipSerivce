@@ -5,7 +5,9 @@ public class StartUp {
     
     public static void main(String[] args) {
         //Initialize worker object
-        ResturantTipCalculator calc = new ResturantTipCalculator(100, .10);
+//        ResturantTipCalculator calc = new ResturantTipCalculator(100, .10);
+        
+        BartenderTipCalculator calc = new BartenderTipCalculator(100, .10);
         
         TipService tipService = new TipService(calc);
         double tip = tipService.calcTip();
