@@ -8,10 +8,13 @@ public class TipService {
     private TipCalculator calc;
 
     public TipService(TipCalculator calc) {
+        //this validates the calculator
+        //setCalc(calc); 
         this.calc = calc;
     }
     
-    public double calcTip() {
+    //change to final so no one else can modify it
+    public final double calcTip() {
         return calc.calcTip();
     }
     
